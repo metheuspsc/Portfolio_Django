@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Matheus Pessoa - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static '/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static '/css/noscript.css' %}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Matheus Pessoa</h1>
+							<p class="major">Freelance Python Programmer and Economics Student</a>.</p>
+							<ul class="icons">
+								<li><a href="http://github.com/metheuspsc" class="icon brands style2 fa-github"><span class="label">github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/matheus-pessoa-39504b176/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="matheuspessoax@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">See my projects!</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="{% static 'images/Eu.jpg' %}" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>PDF Converter</h2>
+							<p>Upwork client asked for a VBA script to merge Excel and Doc files into a single PDF, without using Acrobat. So to solve this I made a Python program that created a list of converted files and merged them creating bookmarks on the process 
+								<br><b>Modules</b>: os, sys, wincom32, PyPDF2, logging and tempfile.</p>
+						</div>
+						<div class="image">
+							<img src="{% static 'images/freela1.png' %}" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-left onscroll-image-fade-in">
+						<div class="content">
+							<h2>Ninja Trader Downloader</h2>
+							<p>Started as a AutoIt project to automate Historical Data downloads based on a spreadsheet, but since AutoIt couldn't recognize the handles I made it with Python.
+								<br><b>Modules</b>: sys, datetime, time, pandas, pywinauto, PySimpleGUI.</p>
+						</div>
+						<div class="image">
+							<img src="{% static 'images/freela2.jpg' %}" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Gmail to Trello</h2>
+							<p>Made this during my internship to simplify communication between 2 Back Office teams, it's a scheduled script that fetches specific messages from Gmail inbox and creates a Trello card
+								<br><b>Modules</b>: sys, datetime, time, requests.
+							</p>
+						</div>
+						<div class="image">
+							<img src="{% static 'images/trello-gmail.png' %}" alt="" />
+						</div>
+					</section>
+					
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Option Trading Bots</h2>
+							<p>Ongoing pratice project that automates option trading using different technical analysis techniques and Machine Learning
+								<br><b>Modules</b>: iqoptionapi, sys, datetime, time, randomforests, pandas.
+								<br><b>Repository</b>:<a href="https://github.com/metheuspsc/Iq_Option_Bots">Iq Option Bots</a>
+							</p>
+						</div>
+						<div class="image">
+							<img src="{% static 'images/optionbot.jpg' %}" alt="" />
+						</div>
+					</section>
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2><b>Skills</b></h2>
+							<p>A programmer should never stop learning.
+								<br>These are the skills i've aquired on my programming journey up untill now.
+							</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon solid style2 major fa-university"></span>
+									<h3>Economics</h3>
+									<p>Student of Economic Sciences at UFRJ.
+										<br>Courses, Certificates and 2 years of experience working with finacial markets.
+									</p>
+								</section>
+								<!--section>
+									<span class="icon solid style2 major fa-chart-area"></span>
+									<h3>Financial Markets</h3>
+									<p>Courses, Certificates and 2 years of experience working with finacial markets.</p>
+								</section-->
+								<section>
+									<span class="icon solid style2 major fa-file-excel"></span>
+									<h3>VBA</h3>
+									<p>Deep VBA Knowledge for automating all office applications.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-cogs"></span>
+									<h3>Automation</h3>
+									<p>Multiple projects using Python, VBA, AutoIt and Selenium to automate boring stuff.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-code"></span>
+									<h3>Django</h3>
+									<p>Begginer at Django Web Development, this portfolio was my first project.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-database"></span>
+									<h3>SQL</h3>
+									<p>I write a lot of SQL queries daily at my internship.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-magic"></span>
+									<h3>Data Science</h3>
+									<p>Courses and Projects for Machine Learning and prediction models.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static '/js/jquery.min.js' %}"></script>
+			<script src="{% static '/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static '/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static '/js/browser.min.js' %}"></script>
+			<script src="{% static '/js/breakpoints.min.js' %}"></script>
+			<script src="{% static '/js/util.js' %}"></script>
+			<script src="{% static '/js/main.js' %}"></script>
+
+	</body>
+</html>
